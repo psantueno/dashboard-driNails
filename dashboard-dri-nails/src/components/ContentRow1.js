@@ -3,36 +3,36 @@ import SmallCard from './SmallCard';
 
 /*  Cada set de datos es un objeto literal */
 
-/* <!-- Movies in DB --> */
+/* <!-- Products in DB --> */
 
-let moviesInDB = {
+let productsInDB = {
     title: 'Total de Productos',
     color: 'primary', 
     cuantity: 21,
     icon: 'fas fa-boxes'
 }
 
-/* <!-- Total awards --> */
+/* <!-- Clients in DB --> */
 
-let totalAwards = {
+let clientsInDB = {
     title:' Total Clientes', 
     color:'success', 
     cuantity: '79',
     icon:'fas fa-user-check'
 }
 
-/* <!-- Actors quantity --> */
+/* <!-- Category in DB --> */
 
-let actorsQuantity = {
+let categoysInDB = {
     title:'Total Categorías' ,
     color:'warning',
     cuantity:'49',
     icon:'fas fa-grip-horizontal'
 }
 
-let cartProps = [moviesInDB, totalAwards, actorsQuantity];
+let cartProps = [productsInDB, clientsInDB, categoysInDB];
 
-function ContentRowMovies(){
+function ContentRow1(){
     return (
     
         <div className="row">
@@ -47,4 +47,4 @@ function ContentRowMovies(){
     )
 }
 
-export default ContentRowMovies;
+export default ContentRow1;
