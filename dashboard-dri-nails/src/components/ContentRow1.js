@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import SmallCard from './SmallCard';
+import TotalUsers from "./TotalUsers";
 
 /*  Cada set de datos es un objeto literal */
 
@@ -15,9 +16,9 @@ let productsInDB = {
 /* <!-- Clients in DB --> */
 
 let clientsInDB = {
-    title:' Total Clientes', 
+    title:' Total Usuarios', 
     color:'success', 
-    cuantity: '79',
+    cuantity: <TotalUsers/>,
     icon:'fas fa-user-check'
 }
 
@@ -33,6 +34,7 @@ let categoysInDB = {
 let cartProps = [productsInDB, clientsInDB, categoysInDB];
 
 function ContentRow1(){
+    
     return (
     
         <div className="row">
@@ -42,6 +44,7 @@ function ContentRow1(){
                 return <SmallCard {...movie} key={i}/>
             
             })}
+            
 
         </div>
     )
