@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../assets/images/logo-Dri.jpeg';
 
+
 function SideBar(){
     return(
         <React.Fragment>
@@ -36,22 +37,24 @@ function SideBar(){
                 </li>
 
                 {/*<!-- Nav Item - Charts -->*/}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-boxes"></i>
                         <span>Productos (TBD)</span></a>
-                </li>
+                </li> */}
 
                 {/*<!-- Nav Item - Tables -->*/}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <a className="nav-link" href="/">
                         <i className="fas fa-user"></i>
                         <span>Clientes (TBD)</span></a>
-                </li>
+                </li> */}
+                
 
                 {/* <!-- Divider -->
                 <hr className="sidebar-divider d-none d-md-block"/> */}
             </ul>
+            
             {/*<!-- End of Sidebar -->*/}
             
         </React.Fragment>

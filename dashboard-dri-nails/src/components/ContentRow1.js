@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import SmallCard from './SmallCard';
 import TotalUsers from "./TotalUsers";
+import TotalProducts from "./TotalProducts";
+import TotalCategories from "./TotalCategories";
 
 /*  Cada set de datos es un objeto literal */
 
@@ -9,7 +11,7 @@ import TotalUsers from "./TotalUsers";
 let productsInDB = {
     title: 'Total de Productos',
     color: 'primary', 
-    cuantity: 21,
+    cuantity: <TotalProducts/>,
     icon: 'fas fa-boxes'
 }
 
@@ -27,7 +29,7 @@ let clientsInDB = {
 let categoysInDB = {
     title:'Total Categorías' ,
     color:'warning',
-    cuantity:'49',
+    cuantity: <TotalCategories/>,
     icon:'fas fa-grip-horizontal'
 }
 

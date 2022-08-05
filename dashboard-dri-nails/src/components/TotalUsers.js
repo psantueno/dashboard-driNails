@@ -1,7 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-
-// Credenciales de API
-//const apiKey = 'dea98d9b'; 
+import React, { useState, useEffect } from 'react';
 
 
 function TotalUsers(){
@@ -13,8 +10,7 @@ function TotalUsers(){
         fetch(`http://localhost:3001/api/users`)
         .then(response => response.json())
         .then((data) => {
-            //console.log(data.count)
-            setUsers(data.count);
+            setUsers(data.users.length);
         })
         .catch((error)=> console.log(error))
     }, [] );
